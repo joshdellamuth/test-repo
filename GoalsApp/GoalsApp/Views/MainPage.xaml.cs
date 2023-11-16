@@ -1,4 +1,4 @@
-﻿namespace GoalsApp;
+﻿namespace GoalsApp.Views;
 
 public partial class MainPage : ContentPage
 {

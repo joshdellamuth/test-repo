@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Shell
+<!--can define namespaces at the top like "local" and "views"-->
+<!--Shell.FlyoutBehavior can be changed to disable and enable the flyout. Set it to "Flyout" to enable-->
+    <Shell
     x:Class="GoalsApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:GoalsApp"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:views="clr-namespace:GoalsApp.Views"
+    Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    <ShellContent
+        Title="TaskPage"
+        ContentTemplate="{DataTemplate views:MakeShiftTaskPage}"
+        Route="TaskPage" />
 
 </Shell>

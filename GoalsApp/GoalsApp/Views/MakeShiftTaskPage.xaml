@@ -4,6 +4,19 @@
              x:Class="GoalsApp.Views.MakeShiftTaskPage"
              >
     <VerticalStackLayout>
-        <Button Text="Nothing here yet."/>
+        <Label Text="Data Binding Example" FontSize="28" FontAttributes="Bold"/>
+        <!--Binding will look at the binding you have in-->
+        <!--the code behind file-->
+        <Label Text="Task Name:"/>
+        <Entry Text="{Binding TaskName}"></Entry>
+
+        <Label Text="Task Number:"/>
+        <Entry Text="{Binding TaskNumber}"></Entry>
+
+        <Label Text="Reflected Data:"/>
+        <Label Text="Task Name:"/>
+        <Label Text="{Binding TaskName}"></Label>
+        <Label Text="Task Number:"/>
+        <Label Text="{Binding TaskNumber}"></Label>
     </VerticalStackLayout>
 </ContentPage>

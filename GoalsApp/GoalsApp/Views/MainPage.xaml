@@ -5,7 +5,7 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            <Button Text="Nothing here yet."
+            <Button Text="Go To Task Page"
                     BackgroundColor="Blue"
                     TextColor="White"
                     Clicked="GoToTaskPage"/>

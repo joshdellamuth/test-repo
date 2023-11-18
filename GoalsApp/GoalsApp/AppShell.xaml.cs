@@ -14,5 +14,14 @@ public partial class AppShell : Shell
 
 		//REGISTER ROUTES HERE
 		Routing.RegisterRoute("TaskPage", typeof(GoalsApp.Views.MakeShiftTaskPage));
-	}
+
+        //REGISTER ROUTES HERE
+        Routing.RegisterRoute("TaskPage", typeof(GoalsApp.Views.MakeShiftTaskPage));
+
+        //REGISTER ROUTES HERE
+        Routing.RegisterRoute("UIExperiments", typeof(GoalsApp.Views.UIExperiments));
+
+        //REGISTER ROUTES HERE
+        Routing.RegisterRoute("UIExperiments2", typeof(GoalsApp.Views.UIExperiments2));
+    }
 }

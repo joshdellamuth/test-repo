@@ -19,4 +19,14 @@
         ContentTemplate="{DataTemplate views:MakeShiftTaskPage}"
         Route="TaskPage" />
 
+    <ShellContent
+        Title="UI Experiments"
+        ContentTemplate="{DataTemplate views:UIExperiments}"
+        Route="UIExperiments" />
+
+    <ShellContent
+        Title="UI Experiments 2"
+        ContentTemplate="{DataTemplate views:UIExperiments2}"
+        Route="UIExperiments2" />
+
 </Shell>

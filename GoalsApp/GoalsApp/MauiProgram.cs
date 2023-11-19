@@ -13,8 +13,12 @@ public static class MauiProgram
             // After initializing the .NET MAUI Community Toolkit, optionally add additional fonts
             .ConfigureFonts(fonts =>
             {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                //Default fonts 
+                //fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                //fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+
+                //Newly added fonts: 
+                fonts.AddFont("Montserrat-ExtraBold.ttf", "MontserratExtraBold");
             });
 
         // Continue initializing your .NET MAUI App here

@@ -11,7 +11,7 @@ public partial class UIExperiments2 : ContentPage
         //If all code is done in c#, no need to call initialize component
         //InitializeComponent();
 
-        var label = new Label { Text = "My Tasks" };
+        var label = new Label { Text = "My Tasks", FontFamily = "MontserratExtraBold" };
 
         //button.Clicked has our object (button) getting clicked
         //+= is used to subscribe to a method 
@@ -23,7 +23,7 @@ public partial class UIExperiments2 : ContentPage
         {
             Content = new Expander
             {
-                Header = new Label { Text = "Section 1" },
+                Header = new Label { Text = "Section 1", FontFamily= "MontserratExtraBold" },
                 Content = new Label { Text = "Content for section 1" }
             },
             Padding = new Thickness(10),
@@ -40,7 +40,7 @@ public partial class UIExperiments2 : ContentPage
 
         Content = new StackLayout
         {
-            Padding = new Thickness(10),
+            Padding = new Thickness(15),
             Children = { label, border }
         };
     }

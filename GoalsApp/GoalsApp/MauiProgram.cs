@@ -18,7 +18,11 @@ public static class MauiProgram
                 //fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 
                 //Newly added fonts: 
-                fonts.AddFont("Montserrat-ExtraBold.ttf", "MontserratExtraBold");
+                fonts.AddFont("Montserrat-Regular.ttf", "Montserrat");
+                fonts.AddFont("Montserrat-Bold.ttf", "MontserratBold");
+                fonts.AddFont("Montserrat-ExtraBold.ttf", "MontserratExtraBold"); //pretty bold, maybe too bold 
+                fonts.AddFont("Montserrat-Light.ttf", "MontserratLight");
+                fonts.AddFont("Montserrat-Italic.ttf", "MontserratItalic"); 
             });
 
         // Continue initializing your .NET MAUI App here

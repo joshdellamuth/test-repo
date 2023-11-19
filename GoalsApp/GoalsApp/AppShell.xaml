@@ -7,6 +7,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:GoalsApp"
     xmlns:views="clr-namespace:GoalsApp.Views"
+    Shell.NavBarIsVisible="False"
     Shell.FlyoutBehavior="Flyout">
 
     <ShellContent

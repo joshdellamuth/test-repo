@@ -1,12 +1,25 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GoalsApp.Views.UIExperiments2"
-             Title="UIExperiments2">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:ctk="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+             xmlns:shapes="clr-namespace:Microsoft.Maui.Controls.Shapes;assembly=Microsoft.Maui.Controls"
+             x:Class="GoalsApp.Views.UIExperiments2">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="My Tasks" FontFamily="MontserratBold" FontSize="30" Padding="0,0,0,10"/>
+            <Button Text="+" FontSize="40"/>
+            <Border Padding="15,10,10,5" BackgroundColor="#cdcacc">
+                <Border.StrokeShape>
+                    <shapes:RoundRectangle CornerRadius="10,10,2,2" />
+                </Border.StrokeShape>
+                <Border.Content>
+                    <ctk:Expander>
+                        <ctk:Expander.Header>
+                            <Label Text="Section 1" FontFamily="MontserratBold" />
+                        </ctk:Expander.Header>
+                        <Label Text="Content for section 1" />
+                    </ctk:Expander>
+                </Border.Content>
+            </Border>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
